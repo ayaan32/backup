@@ -15,16 +15,16 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 @Suppress("DEPRECATION")
-class FirstScreen : AppCompatActivity() {
+class LandingPage : AppCompatActivity() {
 
     @SuppressLint("WeekBasedYear")
     var formatDate=SimpleDateFormat("dd MMM YYYY", Locale.US)
-    val players= arrayOf("Ronaldo","Messi","Neymar","Pogba")
+    val players= arrayOf("Departure","Arrival","Neymar","Pogba")
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_first_screen)
+        setContentView(R.layout.landing_page)
         val datePickerButtonto=findViewById<Button>(R.id.datePickerButtonto)
         val datePickerButtonfrom=findViewById<Button>(R.id.datePickerButtonfrom)
         datePickerButtonto.setOnClickListener {
@@ -69,13 +69,13 @@ class FirstScreen : AppCompatActivity() {
             datePicker.show()
 
         }
-        val spinner=findViewById<Spinner>(R.id.spinCountryfrom)
-        val spinner2=findViewById<Spinner>(R.id.spinCountryto)
+        val spinner=findViewById<Spinner>(R.id.spinCountryFrom)
+        val spinner2=findViewById<Spinner>(R.id.spinCountryTo)
         val arrayAdapter=ArrayAdapter(this,android.R.layout.simple_spinner_dropdown_item,players)
         spinner.adapter=arrayAdapter
         spinner.onItemSelectedListener= object: AdapterView.OnItemSelectedListener {
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
-                Toast.makeText(this@FirstScreen,players[p2],Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@LandingPage,players[p2],Toast.LENGTH_SHORT).show()
             }
 
             override fun onNothingSelected(p0: AdapterView<*>?) {
@@ -87,7 +87,7 @@ class FirstScreen : AppCompatActivity() {
         spinner2.adapter=arrayAdapter2
         spinner2.onItemSelectedListener= object: AdapterView.OnItemSelectedListener {
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
-                Toast.makeText(this@FirstScreen,players[p2],Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@LandingPage,players[p2],Toast.LENGTH_SHORT).show()
             }
 
             override fun onNothingSelected(p0: AdapterView<*>?) {

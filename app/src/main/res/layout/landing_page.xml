@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/firstscreenbg"
-    tools:context=".FirstScreen">
+    tools:context=".LandingPage">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,12 +14,14 @@
         android:paddingVertical="50dp"
         android:orientation="vertical">
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Hello,Name"
-            android:textColor="@color/black"
-            android:textSize="32dp"
-            android:paddingHorizontal="10dp"/>
+            android:layout_width="wrap_content"
+            android:text="@string/welcome"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center" />
 
 
     </LinearLayout>
@@ -39,34 +41,52 @@
             android:paddingHorizontal="20dp"
             android:orientation="vertical">
 
-
-
-
-
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                style="@style/Widget.Neumorph.CardView"
+                app:neumorph_shapeType="pressed"
+                tools:ignore="MissingClass">
             <Spinner
-                android:id="@+id/spinCountryfrom"
+                android:id="@+id/spinCountryFrom"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="5dp"
-                android:paddingLeft="8dp"
-                android:popupBackground="@android:color/holo_purple"
+                android:paddingStart="8dp"
+                android:popupBackground="@android:color/background_light"
                 android:background="@drawable/rounded_spinner"
                 android:layout_marginBottom="20dp"
-                android:spinnerMode="dropdown" />
-            <Spinner
-                android:id="@+id/spinCountryto"
+                android:spinnerMode="dropdown"
+                tools:ignore="RtlSymmetry" />
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="5dp"
-                android:paddingLeft="8dp"
-                android:popupBackground="@android:color/holo_purple"
-                android:background="@drawable/rounded_spinner"
-                android:spinnerMode="dropdown" />
-
-
-
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                style="@style/Widget.Neumorph.CardView"
+                app:neumorph_shapeType="pressed"
+                tools:ignore="MissingClass">
+                <Spinner
+                    android:id="@+id/spinCountryTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="8dp"
+                    android:popupBackground="@android:color/background_light"
+                    android:background="@drawable/rounded_spinner"
+                    android:layout_marginBottom="20dp"
+                    android:spinnerMode="dropdown"
+                    tools:ignore="RtlSymmetry" />
+            </soup.neumorphism.NeumorphCardView>
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -78,25 +98,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center">
+                android:gravity="center"
+                tools:ignore="NestedWeights">
                 <Button
                     android:id="@+id/datePickerButtonfrom"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="JAN 01 2020"
+                    android:text="@string/jan_01_2020_againn"
                     android:layout_margin="10dp"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:textColor="@color/black"
                     style="?android:spinnerStyle"/>
                 <Button
                     android:id="@+id/datePickerButtonto"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="JAN 01 2020"
+                    android:text="@string/jan_01_2020againnn"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:textColor="@color/black"
                     style="?android:spinnerStyle"/>
 
@@ -111,7 +132,7 @@
                     android:id="@+id/searchflightsbutton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Search Flights"
+                    android:text="@string/search_flight"
                     />
             </LinearLayout>
         </LinearLayout>

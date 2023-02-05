@@ -10,10 +10,10 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.sign_in_page)
         val firstButton = findViewById<Button>(R.id.signin)
         firstButton.setOnClickListener {
-            val intent = Intent(this, FirstScreen::class.java)
+            val intent = Intent(this, LandingPage::class.java)
             startActivity(intent)
         }
     }

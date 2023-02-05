@@ -1,8 +1,16 @@
 <resources>
     <string name="app_name">Abc</string>
-    <string name="welcome">Welcome</string>
+    <string name="welcome">Book FLight</string>
     <string name="let_s_get_started">Let\'s book your flight</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="sign_in">Sign In</string>
+    <string name="search_flights">Search Flights</string>
+    <string name="jan_01_2020">JAN 01 2020</string>
+    <string name="jan_01_2020_again">JAN 01 2020</string>
+    <string name="book_flight">Book Flight</string>
+    <string name="hello_name">Hello,Name</string>
+    <string name="jan_01_2020_againn">JAN 01 2020</string>
+    <string name="jan_01_2020againnn">JAN 01 2020</string>
+    <string name="search_flight">Search Flights</string>
 </resources>
