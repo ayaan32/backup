@@ -19,7 +19,7 @@ class LandingPage : AppCompatActivity() {
 
     @SuppressLint("WeekBasedYear")
     var formatDate=SimpleDateFormat("dd MMM YYYY", Locale.US)
-    val players= arrayOf("Departure","Arrival","Neymar","Pogba")
+    val players= arrayOf("Mangalore-IXE","Pune-PNQ","Delhi_DEL","Lucknow-LKO")
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
