@@ -11,6 +11,8 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         style="@style/Widget.Neumorph.CardView"
+        app:neumorph_shadowColorDark="@color/text_color"
+        app:neumorph_shadowColorLight="@color/text_color"
         tools:ignore="MissingClass">
     <LinearLayout
         android:layout_width="match_parent"
@@ -61,7 +63,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
-                    android:textColor="@color/purple_700"
+                    android:textColor="@color/text_color"
                     android:textSize="15dp"
                     android:text="LKO"/>
             </LinearLayout>
@@ -107,7 +109,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
-                    android:textColor="@color/purple_700"
+                    android:textColor="@color/text_color"
                     android:textSize="15dp"
                     android:text="LKO"/>
             </LinearLayout>
@@ -157,7 +159,7 @@
                 android:textAlignment="center"
                 android:textSize="20dp"
                 android:textFontWeight="900"
-                android:textColor="@color/purple_700"
+                android:textColor="@color/text_color"
                 android:text="Airline Name"/>
             </soup.neumorphism.NeumorphCardView>
 
@@ -192,7 +194,7 @@
                 android:paddingLeft="20sp"
                 android:paddingRight="20sp"
                 android:textAlignment="center"
-                android:textColor="@color/black"
+                android:textColor="@color/text_color"
                 android:textSize="20dp"
                 android:text="Rs.320"/>
             </soup.neumorphism.NeumorphCardView>

@@ -74,6 +74,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:orientation="vertical"
                 android:gravity="center">
                 <TextView
@@ -86,8 +87,6 @@
             <soup.neumorphism.NeumorphCardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
                 style="@style/Widget.Neumorph.CardView"
                 tools:ignore="MissingClass">
                 <TextView
@@ -115,13 +114,24 @@
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="horizontal">
-            <soup.neumorphism.NeumorphCardView
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="40sp"
+                    android:layout_height="50sp"
+                    app:srcCompat="@drawable/ic_person_foreground"/>
+
+                <soup.neumorphism.NeumorphCardView
                 android:layout_width="150sp"
                 android:layout_height="125sp"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 style="@style/Widget.Neumorph.CardView"
                 tools:ignore="MissingClass">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -145,7 +155,16 @@
                     android:layout_height="wrap_content"/>
             </LinearLayout>
             </soup.neumorphism.NeumorphCardView>
-
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="40sp"
+                    android:layout_height="50sp"
+                    app:srcCompat="@drawable/flighticon"/>
             <soup.neumorphism.NeumorphCardView
                 android:layout_width="150sp"
                 android:layout_height="125sp"
@@ -175,6 +194,7 @@
                     android:layout_height="wrap_content"/>
             </LinearLayout>
         </soup.neumorphism.NeumorphCardView>
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -252,7 +272,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.5"
         android:gravity="center">
@@ -260,7 +280,8 @@
             android:id="@+id/bookflightbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Book Flight" />
+            android:text="Book Flight"
+            android:textColor="@color/white"/>
     </LinearLayout>
 
 </LinearLayout>

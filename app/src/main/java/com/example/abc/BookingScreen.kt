@@ -30,7 +30,7 @@ class BookingScreen : AppCompatActivity() {
 
         val bookflightbutton = findViewById<Button>(R.id.bookflightbutton)
         bookflightbutton.setOnClickListener {
-            val builder = AlertDialog.Builder(this)
+            val builder = AlertDialog.Builder(this,R.style.MyDialogTheme)
             builder.setIcon(R.drawable.ic_baseline_check_circle_24)
             builder.setTitle("Success")
             builder.setMessage("Flight Booked")
