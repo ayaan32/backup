@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="280sp"
+    android:layout_height="320sp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
@@ -18,7 +18,7 @@
         android:layout_marginVertical="1sp"
         android:layout_marginHorizontal="1sp"
         android:background="@drawable/rounded_corners"
-        android:layout_height="250sp">
+        android:layout_height="320sp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -29,7 +29,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp">
+            android:layout_marginBottom="5dp"
+            android:gravity="center">
 
             <soup.neumorphism.NeumorphCardView
                 android:layout_width="120sp"
@@ -70,7 +71,6 @@
             <ImageView
                 android:layout_width="50sp"
                 android:layout_height="50sp"
-                android:layout_marginTop="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -116,20 +116,42 @@
 
         </LinearLayout>
 
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40sp"
+                    android:layout_height="50sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.078"
+                    app:srcCompat="@drawable/flighticon"/>
+
+
             <soup.neumorphism.NeumorphCardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 style="@style/Widget.Neumorph.CardView"
-                app:neumorph_shapeType="pressed"
                 tools:ignore="MissingClass">
+
+
+
             <TextView
                 android:id="@+id/airlinename"
-                android:paddingBottom="10sp"
-                android:paddingTop="10sp"
-                android:paddingLeft="10sp"
-                android:paddingRight="10sp"
+                android:paddingBottom="15sp"
+                android:paddingTop="15sp"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
@@ -139,27 +161,43 @@
                 android:text="Airline Name"/>
             </soup.neumorphism.NeumorphCardView>
 
-            <soup.neumorphism.NeumorphCardView
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40sp"
+                    android:layout_height="50sp"
+                    app:srcCompat="@drawable/rupeeicon"/>
+
+
+
+
+                <soup.neumorphism.NeumorphCardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
                 style="@style/Widget.Neumorph.CardView"
-                app:neumorph_shapeType="pressed"
                 tools:ignore="MissingClass">
             <TextView
                 android:id="@+id/price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="10sp"
-                android:paddingBottom="10sp"
-                android:paddingLeft="10sp"
-                android:paddingRight="10sp"
+                android:paddingTop="15sp"
+                android:paddingBottom="15sp"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20dp"
                 android:text="Rs.320"/>
             </soup.neumorphism.NeumorphCardView>
+
+            </LinearLayout>
 
 
 
