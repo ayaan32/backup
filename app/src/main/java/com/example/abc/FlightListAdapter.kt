@@ -69,6 +69,7 @@ internal class FlightListAdapter(private val arrayList: java.util.ArrayList<Flig
         holder.airlinename.text = flight.airlinename
         holder.price.text = flight.price.toString()
 
+
        var context = holder.itemView.getContext();
         holder.itemView.setOnClickListener {
             val i = Intent(context, BookingScreen::class.java)

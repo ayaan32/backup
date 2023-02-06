@@ -22,12 +22,12 @@ class ListScreen : AppCompatActivity() {
         prepareMovieData()
     }
     private fun prepareMovieData() {
-        FlightList.add(FlightModel("18:30","21:30","LKO","BLR","Indigo",32.20))
+        FlightList.add(FlightModel("18:30","21:30","LKO","BLR","Indigo",5532.20))
         FlightList.add(FlightModel("15:30","19:30","KNP","BLR","Indigo",8932.20))
-        FlightList.add(FlightModel("18:30","21:30","LKO","BLR","Indigo",32.20))
-        FlightList.add(FlightModel("18:30","21:30","LKO","BLR","Indigo",32.20))
-        FlightList.add(FlightModel("15:30","19:30","KNP","BLR","Indigo",8932.20))
-        FlightList.add(FlightModel("18:30","21:30","LKO","BLR","Indigo",32.20))
+        FlightList.add(FlightModel("18:30","21:30","LKO","BLR","Indigo",6738.20))
+        FlightList.add(FlightModel("18:30","21:30","LKO","BLR","Indigo",6890.50))
+        FlightList.add(FlightModel("15:30","19:30","KNP","BLR","Indigo",8970.20))
+        FlightList.add(FlightModel("18:30","21:30","LKO","BLR","Indigo",7735.00))
 
     }
     }
